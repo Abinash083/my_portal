@@ -2,4 +2,26 @@
 
 {% block title %}sign up{% endblock %}
 
-{% block content %} this is signUp page{% endblock %}
+{% block content %}
+<form method="POST">
+    <h1>Sign up</h1>
+    <div>
+        <label for="name" name>Name</label><br>
+        <input type="text" id="first_name" name="first_name" placeholder="enter name"/><br>
+
+        <label for="last name" name>Last Name</label><br>
+        <input type="text" id="last_name" name="last_name" placeholder="enter last name"/><br>
+
+        <label for="email" name>Email</label><br>
+        <input type="email" id="email" name="email" placeholder="enter email"/><br>
+
+        <label for="password" name>password</label><br>
+        <input type="password" id="password" name="password" placeholder="enter password"/><br>
+
+        <label for="password1" name>re-type password</label><br>
+        <input type="password" id="password1" name="password1" placeholder="enter password again"/><br>
+
+    </div>
+    <button type="submit">Sign up</button>
+</form>
+{% endblock %}

@@ -2,4 +2,18 @@
 
 {% block title %}login{% endblock %}
 
-{% block content %} this is login page{% endblock %}
+{% block content %} <form method="POST">
+    <H1>Log in</H1>
+    <div>
+        
+
+        <label for="email" name>Email</label><br>
+        <input type="email" id="email" name="email" placeholder="enter email"/><br>
+
+        <label for="password" name>password</label><br>
+        <input type="password" id="password" name="password" placeholder="enter password"/><br>
+
+
+    </div>
+    <button type="submit">log-in</button>
+</form>{% endblock %}

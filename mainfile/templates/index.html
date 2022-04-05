@@ -2,4 +2,10 @@
 
 {% block title %}Home{% endblock %}
 
-{% block content %} this is home page after log in {{user.first_name}}{% endblock %}
+{% block content %}  
+<p style="text-align: center;">logged in as {{user.first_name.title()}} {{user.last_name.title()}}</p>
+<br/>
+<div class="grid-container">
+    <button id="Note"class="grid-item" ><img src= "/static/ios-icon.png"/></button>
+</div>
+{% endblock %}

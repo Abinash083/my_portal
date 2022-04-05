@@ -1,19 +1,18 @@
 {%extends "template.html"%}
-
+{% block head %}{% endblock %}
 {% block title %}login{% endblock %}
 
-{% block content %} <form method="POST">
-    <H1>Log in</H1>
-    <div>
-        
-
-        <label for="email" name>Email</label><br>
-        <input type="email" id="email" name="email" placeholder="enter email"/><br>
-
-        <label for="password" name>password</label><br>
-        <input type="password" id="password" name="password" placeholder="enter password"/><br>
-
-
+{% block content %} <form  style="margin-top:10% ; margin-bottom : 10%;" method = "POST">
+    <H1 style="margin-left: 50%;">Log in</H1>
+    <div style="margin-left: 25%;">
+        <div style="margin-right: 25%;" class="input-group">
+            <input id="email" type="email" class="form-control" name="email" placeholder="Email">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>   
+        </div>
+        <div style="margin-right: 25%;" class="input-group">
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        </div><br/>
     </div>
-    <button type="submit">log-in</button>
+    <button style="margin-left: 50%;" class= "btn btn-success" type="submit">log-in</button>
 </form>{% endblock %}

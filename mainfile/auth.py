@@ -29,10 +29,10 @@ def signup():
             db.session.commit()
             flash('account created', category='sucess')
             session['user_id'] = user.id
-            return redirect(url_for('views.index))
+            return redirect(url_for("views.index"))
     else:
         if "user_id" in session:
-            return redirect(url for("views.index"))
+            return redirect(url_for("views.index"))
     return render_template("signup.html")
     
     
@@ -53,12 +53,10 @@ def login():
             flash('Email does not exist.', category='error')
     else:
         if "user_id" in session:
-            return redirect(url for("views.index"))
+            return redirect(url_for("views.index"))
     return render_template("login.html")
 
 @auth.route('/logout')
 def logout():
-   session.pop("user_id", None)
-
-
+    session.pop("user_id", None)
     return redirect(url_for('views.home'))

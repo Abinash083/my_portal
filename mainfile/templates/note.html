@@ -1,0 +1,17 @@
+{%extends "template.html"%}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}  
+<p style="text-align: center;">logged in as {{user.first_name.title()}} {{user.last_name.title()}}</p>
+<br/>
+<div class="list-group">
+    <a href="/" id="Note" class="list-group-item">icon</button>
+    <a href="/" id="Note" class="list-group-item" >icon</button>
+    <a href="/" id="Note" class="list-group-item" >icon</button>
+    <a href="/" id="Note" class="list-group-item" >icon</button>
+    <a href="/" id="Note" class="list-group-item" >icon</button>
+    <a href="/" id="Note" class="list-group-item" >icon</button>
+    <a href="/" id="Note" class="list-group-item" >icon</button>
+</div>
+{% endblock %}
